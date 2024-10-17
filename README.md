@@ -27,7 +27,7 @@ The primary objective of this project was to develop a predictive model capable 
 
 ### Methodology
 ##### 1. EDA
-Data source: click [here](https://www.kaggle.com/datasets/mathchi/churn-for-bank-customers/data)
+Data source: click [here](https://www.kaggle.com/datasets/mathchi/churn-for-bank-customers/data) <br/>
 Conducted exploratory data analysis (EDA) to understand the data distribution, identify missing values, and explore potential relationships between variables.
 ![](img/output.png)
 
