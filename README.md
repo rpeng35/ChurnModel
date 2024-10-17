@@ -26,24 +26,24 @@ The primary objective of this project was to develop a predictive model capable 
 - Random Forest performs better than Regression model
 
 ### Methodology
-##### 1. EDA
+#### 1. EDA
 Data source: click [here](https://www.kaggle.com/datasets/mathchi/churn-for-bank-customers/data) <br/>
 Conducted exploratory data analysis (EDA) to understand the data distribution, identify missing values, and explore potential relationships between variables.
 ![](img/output.png)
 
-##### 2. Feature Engineering
+#### 2. Feature Engineering
 - Applying label encoding for binary features
 - Normalizing numerical features
 - Converting categorical variables (Gender, Geography) into dummy variables
 ![](img/correlation.png)
 
-##### 3. Model Selection and Training
+#### 3. Model Selection and Training
 - Evaluated multiple machine learning algorithms, including random forest and linear regression, to select the most suitable model for churn prediction
 
-##### 4. Model Evalutation
+#### 4. Model Evalutation
 - Random Forest Algorithm has an accuracy of 86%
 - Linear Regression Algorithm has an accuracy of 81%
 
-##### 5. Feature Importance
+#### 5. Feature Importance
 - Analyzed the importance of different features in the model's predictions to identify key drivers of customer churn
 ![](img/feature_importance.png)
