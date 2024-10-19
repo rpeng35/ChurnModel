@@ -3,6 +3,12 @@
 ### Overview:
 The primary objective of this project was to develop a predictive model capable of accurately identifying customers at risk of churning. By anticipating customer attrition, businesses can proactively implement strategies to retain valuable customers, reduce churn rates, and improve overall profitability. To achieve this goal, I employed a combination of data analysis, feature engineering, and machine learning techniques.
 
+### Key Findings
+- with Random Forest Algorithm, an accuracy of 86% is achieved
+- with Linear Regression Model, an accuracy of 81% is achieved
+- The attribute, Age, has the highest feature importance
+- Random Forest performs better than Regression model
+
 ### DataFrame Structure/Columns
 - **RowNumber**—corresponds to the record (row) number and has no effect on the output.
 - **CustomerId**—contains random values and has no effect on customer leaving the bank.
@@ -18,12 +24,6 @@ The primary objective of this project was to develop a predictive model capable 
 - **IsActiveMember**—active customers are less likely to leave the bank.
 - **EstimatedSalary**—as with balance, people with lower salaries are more likely to leave the bank compared to those with higher salaries.
 - **Exited**—whether or not the customer left the bank.
-
-### Key Findings
-- with Random Forest Algorithm, an accuracy of 86% is achieved
-- with Linear Regression Model, an accuracy of 81% is achieved
-- The attribute, Age, has the highest feature importance
-- Random Forest performs better than Regression model
 
 ### Methodology
 #### 1. EDA
