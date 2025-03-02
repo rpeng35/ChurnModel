@@ -1,49 +1,55 @@
 # Churn Prediction Model with Random Forest Algorithm and Linear Regression
 
 ### Overview:
-The primary objective of this project was to develop a predictive model capable of accurately identifying customers at risk of churning. By anticipating customer attrition, businesses can proactively implement strategies to retain valuable customers, reduce churn rates, and improve overall profitability. To achieve this goal, I employed a combination of data analysis, feature engineering, and machine learning techniques.
+Customer churn is a critical issue for businesses, as losing customers directly impacts revenue and profitability. The goal of this project was to build a predictive model that accurately identifies customers at risk of churning. By anticipating customer attrition, businesses can take proactive measures to retain valuable customers, reduce churn rates, and enhance customer satisfaction.
 
-### Key Findings
-- with Random Forest Algorithm, an accuracy of 86% is achieved
-- with Linear Regression Model, an accuracy of 81% is achieved
-- The attribute, Age, has the highest feature importance
-- Random Forest performs better than Regression model
+### Results
+- Random Forest Algorithm performs better than Linear Regression Model with an 86% accuracy in predicting customer churn.
+- Key Insight: The Age attribute had the highest feature importance, indicating that younger customers were more likely to churn.
+- ![](img/feature_importance.png)
 
-### DataFrame Structure/Columns
-- **RowNumber**—corresponds to the record (row) number and has no effect on the output.
-- **CustomerId**—contains random values and has no effect on customer leaving the bank.
-- **Surname**—the surname of a customer has no impact on their decision to leave the bank.
-- **CreditScore**—can have an effect on customer churn, since a customer with a higher credit score is less likely to leave the bank.
-- **Geography**—a customer’s location can affect their decision to leave the bank.
-- **Gender**—it’s interesting to explore whether gender plays a role in a customer leaving the bank.
-- **Age**—this is certainly relevant, since older customers are less likely to leave their bank than younger ones.
-- **Tenure**—refers to the number of years that the customer has been a client of the bank. Normally, older clients are more loyal and less likely to leave a bank.
-- **Balance**—also a very good indicator of customer churn, as people with a higher balance in their accounts are less likely to leave the bank compared to those with lower balances.
-- **NumOfProducts**—refers to the number of products that a customer has purchased through the bank.
-- **HasCrCard**—denotes whether or not a customer has a credit card. This column is also relevant, since people with a credit card are less likely to leave the bank.
-- **IsActiveMember**—active customers are less likely to leave the bank.
-- **EstimatedSalary**—as with balance, people with lower salaries are more likely to leave the bank compared to those with higher salaries.
-- **Exited**—whether or not the customer left the bank.
 
-### Methodology
-#### 1. EDA
-Data source: click [here](https://www.kaggle.com/datasets/mathchi/churn-for-bank-customers/data) <br/>
-Conducted exploratory data analysis (EDA) to understand the data distribution, identify missing values, and explore potential relationships between variables.
-![](img/output.png)
-
-#### 2. Feature Engineering
-- Applying label encoding for binary features
-- Normalizing numerical features
-- Converting categorical variables (Gender, Geography) into dummy variables
+### Technical Components
+ - **Libraries Used:** Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)
+ - **Data Preprocessing:**
+    - Handled missing values
+    - Normalized numerical features
+    - One-hot encoded categorical variables (Gender, Geography)
+  ![](img/output.png)
+- **Models Implemented:**
+    - Random Forest Classifier
+    - Linear Regression Model
+- **Feature Importance Analysis:** Identified key drivers of churn using model interpretability techniques.
 ![](img/correlation.png)
 
-#### 3. Model Selection and Training
-- Evaluated multiple machine learning algorithms, including random forest and linear regression, to select the most suitable model for churn prediction
+### KPIs in Place
+**Model Accuracy:**
+- Random Forest (86%) vs. Linear Regression (81%)
+**Precision & Recall:** Evaluated model effectiveness in correctly identifying churned customers.
+**Feature Importance Score:** Determined the most influential factors driving customer churn.
+**Reduction in Churn Rate:** Potential impact of implementing predictive churn prevention strategies.
 
-#### 4. Model Evalutation
-- Random Forest Algorithm has an accuracy of 86%
-- Linear Regression Algorithm has an accuracy of 81%
 
-#### 5. Feature Importance
-- Analyzed the importance of different features in the model's predictions to identify key drivers of customer churn
-![](img/feature_importance.png)
+
+### Best Practices Implemented
+✔ Balanced the Dataset: Addressed class imbalance to improve model performance.
+✔ Feature Engineering: Applied label encoding, normalization, and dummy variables for improved accuracy.
+✔ Model Comparison: Evaluated multiple algorithms to determine the best-performing model.
+✔ Hyperparameter Tuning: Optimized Random Forest parameters for better predictive power.
+✔ Interpretability: Used feature importance analysis to provide actionable insights.
+
+### Lessons Learned
+📌 Random Forest Outperforms Linear Regression:
+
+Tree-based models handle complex interactions better, leading to higher accuracy.
+📌 Feature Importance Matters:
+
+Age, Credit Score, and Account Balance significantly impact churn likelihood.
+📌 Data Preprocessing is Critical:
+
+Encoding categorical variables and normalizing numerical features improved model performance.
+📌 Next Steps:
+- Implement a real-time monitoring system for churn prediction.
+- Use more advanced models (e.g., XGBoost, Neural Networks) to improve accuracy.
+- Deploy the model as an API for business integration.
+
