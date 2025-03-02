@@ -23,11 +23,10 @@ Customer churn is a critical issue for businesses, as losing customers directly 
   ![](img/correlation.png)
 
 ### KPIs in Place
-**Model Accuracy:**
-- Random Forest (86%) vs. Linear Regression (81%)
-**Precision & Recall:** Evaluated model effectiveness in correctly identifying churned customers.
-**Feature Importance Score:** Determined the most influential factors driving customer churn.
-**Reduction in Churn Rate:** Potential impact of implementing predictive churn prevention strategies.
+**Model Accuracy:** Random Forest (86%) vs. Linear Regression (81%) <br />
+**Precision & Recall:** Evaluated model effectiveness in correctly identifying churned customers. <br />
+**Feature Importance Score:** Determined the most influential factors driving customer churn. <br />
+**Reduction in Churn Rate:** Potential impact of implementing predictive churn prevention strategies. <br />
 
 
 
