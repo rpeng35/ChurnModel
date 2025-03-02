@@ -32,16 +32,16 @@ Customer churn is a critical issue for businesses, as losing customers directly 
 
 
 ### Best Practices Implemented
-✔ **Balanced the Dataset:** Addressed class imbalance to improve model performance.
-✔ **Feature Engineering:** Applied label encoding, normalization, and dummy variables for improved accuracy.
-✔ **Model Comparison:** Evaluated multiple algorithms to determine the best-performing model.
-✔ **Hyperparameter Tuning:** Optimized Random Forest parameters for better predictive power.
-✔ **Interpretability:** Used feature importance analysis to provide actionable insights.
+✔ **Balanced the Dataset:** Addressed class imbalance to improve model performance. <br />
+✔ **Feature Engineering:** Applied label encoding, normalization, and dummy variables for improved accuracy.<br />
+✔ **Model Comparison:** Evaluated multiple algorithms to determine the best-performing model.<br />
+✔ **Hyperparameter Tuning:** Optimized Random Forest parameters for better predictive power.<br />
+✔ **Interpretability:** Used feature importance analysis to provide actionable insights.<br />
 
 ### Lessons Learned
-📌 **Random Forest Outperforms Linear Regression:** Tree-based models handle complex interactions better, leading to higher accuracy.
-📌 **Feature Importance Matters:** Age, Credit Score, and Account Balance significantly impact churn likelihood.
-📌 **Data Preprocessing is Critical:** Encoding categorical variables and normalizing numerical features improved model performance.
+📌 **Random Forest Outperforms Linear Regression:** Tree-based models handle complex interactions better, leading to higher accuracy. <br />
+📌 **Feature Importance Matters:** Age, Credit Score, and Account Balance significantly impact churn likelihood. <br />
+📌 **Data Preprocessing is Critical:** Encoding categorical variables and normalizing numerical features improved model performance. <br />
 📌 **Next Steps:**
   - Implement a real-time monitoring system for churn prediction.
   - Use more advanced models (e.g., XGBoost, Neural Networks) to improve accuracy.
