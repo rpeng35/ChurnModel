@@ -6,7 +6,7 @@ Customer churn is a critical issue for businesses, as losing customers directly 
 ### Results
 - Random Forest Algorithm performs better than Linear Regression Model with an 86% accuracy in predicting customer churn.
 - Key Insight: The Age attribute had the highest feature importance, indicating that younger customers were more likely to churn.
-- ![](img/feature_importance.png)
+![](img/feature_importance.png)
 
 
 ### Technical Components
@@ -20,7 +20,7 @@ Customer churn is a critical issue for businesses, as losing customers directly 
     - Random Forest Classifier
     - Linear Regression Model
 - **Feature Importance Analysis:** Identified key drivers of churn using model interpretability techniques.
-![](img/correlation.png)
+  ![](img/correlation.png)
 
 ### KPIs in Place
 **Model Accuracy:**
@@ -32,24 +32,18 @@ Customer churn is a critical issue for businesses, as losing customers directly 
 
 
 ### Best Practices Implemented
-✔ Balanced the Dataset: Addressed class imbalance to improve model performance.
-✔ Feature Engineering: Applied label encoding, normalization, and dummy variables for improved accuracy.
-✔ Model Comparison: Evaluated multiple algorithms to determine the best-performing model.
-✔ Hyperparameter Tuning: Optimized Random Forest parameters for better predictive power.
-✔ Interpretability: Used feature importance analysis to provide actionable insights.
+✔ **Balanced the Dataset:** Addressed class imbalance to improve model performance.
+✔ **Feature Engineering:** Applied label encoding, normalization, and dummy variables for improved accuracy.
+✔ **Model Comparison:** Evaluated multiple algorithms to determine the best-performing model.
+✔ **Hyperparameter Tuning:** Optimized Random Forest parameters for better predictive power.
+✔ **Interpretability:** Used feature importance analysis to provide actionable insights.
 
 ### Lessons Learned
-📌 Random Forest Outperforms Linear Regression:
-
-Tree-based models handle complex interactions better, leading to higher accuracy.
-📌 Feature Importance Matters:
-
-Age, Credit Score, and Account Balance significantly impact churn likelihood.
-📌 Data Preprocessing is Critical:
-
-Encoding categorical variables and normalizing numerical features improved model performance.
-📌 Next Steps:
-- Implement a real-time monitoring system for churn prediction.
-- Use more advanced models (e.g., XGBoost, Neural Networks) to improve accuracy.
-- Deploy the model as an API for business integration.
+📌 **Random Forest Outperforms Linear Regression:** Tree-based models handle complex interactions better, leading to higher accuracy.
+📌 **Feature Importance Matters:** Age, Credit Score, and Account Balance significantly impact churn likelihood.
+📌 **Data Preprocessing is Critical:** Encoding categorical variables and normalizing numerical features improved model performance.
+📌 **Next Steps:**
+  - Implement a real-time monitoring system for churn prediction.
+  - Use more advanced models (e.g., XGBoost, Neural Networks) to improve accuracy.
+  - Deploy the model as an API for business integration.
 
